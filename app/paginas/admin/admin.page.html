@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-button class="btn-menu" color="primary" [routerLink]="['/home']" >	← </ion-button>
+  <br>
+  <br>
+  <br>
+  <div class="logo">
+    <h1 class="text">Logo farmacia simple</h1>
+  </div>
+  
+
+  <ion-card class="login" class="card-login">
+    <ion-card-header class="login">
+      <ion-title class="title"> <h6> Admin </h6></ion-title>
+    </ion-card-header>
+      <ion-item lines="full" color="peo">
+        <ion-label position="floating">Usuario</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="peo">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
+          <ion-button expand="full" (click)="ingresar()" (click)="btnAdmin()" [routerLink]="['/admin-menu']" >Ingresar como admin</ion-button>
+
+              <p>{{ handlerMessage }}</p>
+              <p>{{ roleMessage }}</p>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+
+  <footer class="footer">
+    <ion-button class="btn-menu" color="primary" [routerLink]="['/home']" >	← </ion-button>
+  </footer>
+
+</ion-content>

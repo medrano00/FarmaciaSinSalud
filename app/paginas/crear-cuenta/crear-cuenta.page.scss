@@ -1,0 +1,57 @@
+.text{
+    color:black;
+  }
+
+.title{
+    color: whitesmoke;
+
+  }
+
+.big-title{
+    text-align: center;
+}
+
+.text-welcum{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    justify-content: center;
+    color:black;
+    background-color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.logo{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    justify-content: center;
+    top: 5%;
+    padding-top: 5%;
+    border: solid black;
+  }
+
+.card-login{
+    background-color: #f33a2de8;
+}
+
+.btn-admin{
+  display: relative;
+  padding-top: 2%;
+  height: 2rem;
+  width: 10rem;
+}
+
+.footer{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    background-color: black;
+}
+  

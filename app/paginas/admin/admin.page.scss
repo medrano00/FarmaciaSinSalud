@@ -1,0 +1,42 @@
+.text{
+    color:black;
+  }
+
+.title{
+    color: whitesmoke;
+
+  }
+
+.logo{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    justify-content: center;
+    top: 5%;
+    padding-top: 5%;
+    border: solid black;
+  }
+
+.card-login{
+    background-color: black;
+}
+
+.btn-admin{
+  display: relative;
+  padding-top: 2%;
+  height: 2rem;
+  width: 10rem;
+}
+
+.footer{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    background-color:#f33a2de8;
+}
+  

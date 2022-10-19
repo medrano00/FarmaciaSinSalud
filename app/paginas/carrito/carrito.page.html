@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Carrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button  color="primary" [routerLink]="['/stock']" >	← </ion-button>
+  <br>
+  <ion-button class="btn-admin" color="success" (click)="btnTransfer()" >💲	Comprar Lista</ion-button>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nombre Producto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Desripcion del producto
+    </ion-card-content>
+    <ion-card-content color="light">
+      Precio: $$$$$$$$$$$$
+    </ion-card-content>
+    <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
+      <!--💲 Comprar-->
+      <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
+      <!--❌ Eliminar-->
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nombre Producto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Desripcion del producto
+    </ion-card-content>
+    <ion-card-content color="light">
+      Precio: $$$$$$$$$$$$
+    </ion-card-content>
+    <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
+      <!--💲 Comprar-->
+      <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
+      <!--❌ Eliminar-->
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nombre Producto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Desripcion del producto
+    </ion-card-content>
+    <ion-card-content color="light">
+      Precio: $$$$$$$$$$$$
+    </ion-card-content>
+    <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
+      <!--💲 Comprar-->
+      <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
+      <!--❌ Eliminar-->
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nombre Producto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Desripcion del producto
+    </ion-card-content>
+    <ion-card-content color="light">
+      Precio: $$$$$$$$$$$$
+    </ion-card-content>
+    <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
+      <!--💲 Comprar-->
+      <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
+      <!--❌ Eliminar-->
+  </ion-card>
+
+  <footer class="footer">
+    <ion-button  color="primary" [routerLink]="['/stock']" class="btn-admin">	+ agregar productos</ion-button>
+    <ion-button  color="primary" [routerLink]="['/stock']" >	← volver</ion-button>
+    <br>
+    <br>
+  </footer>  
+
+</ion-content>

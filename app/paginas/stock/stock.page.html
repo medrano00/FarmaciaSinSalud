@@ -1,0 +1,87 @@
+  <ion-toolbar>
+    <ion-title>Stock</ion-title>
+  </ion-toolbar>
+
+
+<ion-content>
+  <ion-button class="btn-exit" color="primary" [routerLink]="['/home']" >	← </ion-button>
+  <ion-button class="btn-carro" color="primary" [routerLink]="['/carrito']" > 🛒 </ion-button>  
+  <h4 class="text-welcum">Los Mejores Productos</h4>
+  <div class="logo-ss">
+    <h1 class="text">Logo farmacia simple</h1>
+  </div>
+  <br>
+  <h4 class="text-welcum">Categorias</h4>
+  <div class="categ">
+    <ion-button class="btn-menu" color="success">a</ion-button>
+    <ion-button class="btn-menu" color="success">b</ion-button>
+    <ion-button class="btn-menu" color="success">c</ion-button>
+    <ion-button class="btn-menu" color="success">d</ion-button>
+    <ion-button class="btn-menu" color="success">e</ion-button>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="stock-menu">
+    <div class="stock">
+      <h2 class="text">Nombre Producto</h2>
+      <div class="logo-prod">
+        <h1 class="text">Imagen producto</h1>
+      </div>
+      <h4 class="text">descripcion del producto</h4>
+      <ion-button (click)="btnTransfer()" class="btn-menu" color="success">💲 Comprar</ion-button>
+      <ion-button (click)="btnCarro()" class="btn-menu" color="tertiary">🛒</ion-button>
+      <ion-button (click)="btnChao()" class="btn-menu" color="medium">❌</ion-button>
+    </div>
+  
+    <div class="stock">
+      <h2 class="text">Nombre Producto</h2>
+      <div class="logo-prod">
+        <h1 class="text">Imagen producto</h1>
+      </div>
+      <h4 class="text">descripcion del producto</h4>
+      <ion-button (click)="btnTransfer()" class="btn-menu" color="success">💲 Comprar</ion-button>
+      <ion-button (click)="btnCarro()" class="btn-menu" color="tertiary">🛒</ion-button>
+      <ion-button (click)="btnChao()" class="btn-menu" color="medium">❌</ion-button>
+    </div>
+    
+
+    <div class="stock">
+      <h2 class="text">Nombre Producto</h2>
+      <div class="logo-prod">
+        <h1 class="text">Imagen producto</h1>
+      </div>
+      <h4 class="text">descripcion del producto</h4>
+      <ion-button (click)="btnTransfer()" class="btn-menu" color="success">💲 Comprar</ion-button>
+      <ion-button (click)="btnCarro()" class="btn-menu" color="tertiary">🛒</ion-button>
+      <ion-button (click)="btnChao()" class="btn-menu" color="medium">❌</ion-button>
+    </div>
+
+    <div class="stock">
+      <h2 class="text">Nombre Producto</h2>
+      <div class="logo-prod">
+        <h1 class="text">Imagen producto</h1>
+      </div>
+      <h4 class="text">descripcion del producto</h4>
+      <ion-button (click)="btnTransfer()" class="btn-menu" color="success">💲 Comprar</ion-button>
+      <ion-button (click)="btnCarro()" class="btn-menu" color="tertiary">🛒</ion-button>
+      <ion-button (click)="btnChao()" class="btn-menu" color="medium">❌</ion-button>
+    </div>
+
+    <div class="stock">
+      <h2 class="text">Nombre Producto</h2>
+      <div class="logo-prod">
+        <h1 class="text">Imagen producto</h1>
+      </div>
+      <h4 class="text">descripcion del producto</h4>
+      <ion-button (click)="btnTransfer()" class="btn-menu" color="success">💲 Comprar</ion-button>
+      <ion-button (click)="btnCarro()" class="btn-menu" color="tertiary">🛒</ion-button>
+      <ion-button (click)="btnChao()" class="btn-menu" color="medium">❌</ion-button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ion-button  color="primary" [routerLink]="['/home']" >	← volver</ion-button>
+  </footer>
+
+</ion-content>

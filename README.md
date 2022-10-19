@@ -1,2 +1,2 @@
 # FarmaciaSinSalud
- Trabajo Programación de Aplicaciones Móviles - PGY4121
+ Entrega 1 - PGY4121-006D

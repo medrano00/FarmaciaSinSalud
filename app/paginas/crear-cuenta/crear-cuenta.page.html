@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="big-title">Nuevo</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-button class="btn-menu" color="primary" [routerLink]="['/home']" >	← </ion-button>
+  <h3 class="text-welcum">Nueva cuenta</h3>
+  <br>
+  <div class="logo">
+    <h1 class="text">Logo farmacia simple</h1>
+  </div>
+  
+  <h5 class="text-welcum">Rellena los datos:</h5>
+  <ion-card class="login" class="card-login">
+    <ion-card-header class="login">
+      <ion-title class="title"> <h6> Nueva cuenta </h6></ion-title>
+    </ion-card-header>
+      <ion-item lines="full" color="peo">
+        <ion-label position="floating">Nombre</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text" [(ngModel)]="user.nombre"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="peo">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input type="password" [(ngModel)]="user.apellido"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="peo">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="user.correo"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="peo">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="peo">
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-label position="floating">Comfirmar Password</ion-label>
+        <ion-input type="password" [(ngModel)]="user.confirm"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
+          <ion-button expand="full" (click)="ingresar()" (click)="btnCreate()">Ingresar</ion-button>
+
+              <p>{{ handlerMessage }}</p>
+              <p>{{ roleMessage }}</p>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+
+  <footer class="footer">
+    <ion-button class="btn-menu" color="primary" [routerLink]="['/home']" >	← Volver</ion-button>
+  </footer>
+
+  
+</ion-content>

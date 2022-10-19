@@ -1,0 +1,73 @@
+.text{
+    color:black;
+  }
+  
+  .text-welcum{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    justify-content: center;
+    color:black;
+    background-color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  ion-header{
+    color: tomato;
+  }
+  
+  .logo{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    justify-content: center;
+    top: 3%;
+    padding-top: 3%;
+    border: solid black;
+  }
+  
+  .menu{
+    width: 90%;
+    display: table;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  .main-menu{
+    position: relative;
+    top: 10%;
+  }
+  
+  .btn-menu{
+    display: flex;
+    justify-content: space-between;
+    float: none;
+    border-radius: 25%;
+  }
+  
+  .footer{
+    position: relative;
+    top: 15%;
+    text-align: center;
+    height: 8rem;
+    background-color: #f33a2de8;
+  }
+  
+  .text-foot{
+    padding: 1%;
+  }
+  
+  .btn-admin{
+    display: relative;
+    padding-top: 2%;
+    height: 2rem;
+    width: 10rem;
+  }

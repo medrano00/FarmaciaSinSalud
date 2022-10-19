@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Admin Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <h1 class="text-welcum">Menu del admin</h1>
+  <br>
+<div class="logo">
+  <h1 class="text">Logo farmacia simple</h1>
+</div>
+
+<div class="main-menu">
+  <h3 class="text-welcum">accede a:</h3>
+  <main class="menu">
+    <ion-button [routerLink]="['/stock']" class="btn-menu" color="danger">Productos</ion-button>
+    <ion-button [routerLink]="['/login']" class="btn-menu" color="danger">Iniciar Sesion</ion-button>
+    <ion-button [routerLink]="['/stock']" class="btn-menu" color="danger">Productos</ion-button>
+    <ion-button [routerLink]="['/login']" class="btn-menu" color="danger">Iniciar Sesion</ion-button>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="text-foot">
+    <h4 class="text">¿No tienes cuenta?</h4>
+    <ion-button [routerLink]="['/crear-cuenta']" class="btn-admin" color="primary">Registrate</ion-button>
+  </div>
+</footer>
+</ion-content>
