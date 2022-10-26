@@ -4,6 +4,71 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-toolbar>
+  <ion-title>Carrito</ion-title>
+</ion-toolbar>
+
+<ion-content>
+
+<ion-button class="btn-exit" color="primary" [routerLink]="['/home']" >	← </ion-button>
+<ion-button class="btn-carro" color="primary" [routerLink]="['/carrito']" >🛒</ion-button>  
+<div class="logo-ss">
+  <img src="../../../assets/SadPenis.jpg" alt="SadPenis.jpg">
+</div>
+<h4 class="text-welcum">Su carrito de compras</h4>
+<br>
+
+<h1>Lista de Compras</h1>
+<ion-button  color="success" (click)="btnTransfer()" >💲	Comprar Lista</ion-button>
+<ion-button  color="danger" (click)="btnRemove()" >❌ Eliminar Lista</ion-button>   
+
+<main>
+  <container>
+    <ul>
+      <li class="list">
+        <img src="../../../assets/medicamento1.jpg" alt="medicamento3.jpg">
+        <p>Soportaweones</p>
+        <p>
+          Precio:
+          $99.999
+        </p>
+        <p> 
+          <ion-button (click)="btnTransfer()">💲</ion-button> 
+          <ion-button (click)="btnRemove()">❌</ion-button>
+        </p>
+        
+      </li>
+
+      <li class="list">
+        <img src="../../../assets/medicamento2.jpg" alt="medicamento3.jpg">
+        <h1>Ubicatex</h1>
+        <p>Precio: $99.999</p>
+        <p> 
+          <ion-button (click)="btnTransfer()">💲</ion-button> 
+          <ion-button (click)="btnRemove()">❌</ion-button>
+        </p>
+      </li>
+
+      <li class="list">
+        <img src="../../../assets/medicamento4.jpg" alt="medicamento3.jpg">
+        <h3>Desemputol</h3>
+        <p>Precio: $99.999</p>
+        <p> 
+          <ion-button (click)="btnTransfer()">💲</ion-button> 
+          <ion-button (click)="btnRemove()">❌</ion-button>
+        </p>
+      </li>
+    </ul>
+  </container>
+</main>
+
+<footer class="footer">
+  <ion-button  color="primary" [routerLink]="['/home']" >	← volver</ion-button>
+</footer>
+</ion-content>
+
+
+<!--
 <ion-content>
   <ion-button  color="primary" [routerLink]="['/stock']" >	← </ion-button>
   <br>
@@ -21,9 +86,9 @@
       Precio: $$$$$$$$$$$$
     </ion-card-content>
     <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
-      <!--💲 Comprar-->
+      
       <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
-      <!--❌ Eliminar-->
+
   </ion-card>
 
   <ion-card>
@@ -38,9 +103,9 @@
       Precio: $$$$$$$$$$$$
     </ion-card-content>
     <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
-      <!--💲 Comprar-->
+      
       <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
-      <!--❌ Eliminar-->
+      
   </ion-card>
 
   <ion-card>
@@ -55,9 +120,9 @@
       Precio: $$$$$$$$$$$$
     </ion-card-content>
     <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
-      <!--💲 Comprar-->
+      
       <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
-      <!--❌ Eliminar-->
+      
   </ion-card>
 
   <ion-card>
@@ -72,9 +137,9 @@
       Precio: $$$$$$$$$$$$
     </ion-card-content>
     <ion-button (click)="btnTransfer()" color="success">💲 Comprar</ion-button>
-      <!--💲 Comprar-->
+      
       <ion-button (click)="btnRemove()" color="danger">❌ Eliminar</ion-button>
-      <!--❌ Eliminar-->
+      
   </ion-card>
 
   <footer class="footer">
@@ -85,3 +150,5 @@
   </footer>  
 
 </ion-content>
+
+-->
