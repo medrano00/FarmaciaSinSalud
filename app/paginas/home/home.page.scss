@@ -18,16 +18,14 @@ ion-header{
 }
 
 .logo{
-  width: 50%;
+  
   display: flex;
   margin: auto;
   align-items: center;
   align-content: center;
   text-align: justify;
   justify-content: center;
-  top: 3%;
-  padding-top: 3%;
-  border: solid black;
+  size: 10%;
 }
 
 .menu{
@@ -43,7 +41,7 @@ ion-header{
 
 .main-menu{
   position: relative;
-  top: 10%;
+  top: 10px;
 }
 
 .btn-menu{

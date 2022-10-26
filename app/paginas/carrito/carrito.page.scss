@@ -1,43 +1,167 @@
-.text{
-    color:black;
-  }
-
-.title{
-    color: whitesmoke;
-
-  }
-
-.logo{
-    width: 50%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    align-content: center;
-    text-align: justify;
-    justify-content: center;
-    top: 5%;
-    padding-top: 5%;
-    border: solid black;
-  }
-
-.card-login{
-    background-color: #f33a2de8;
+* :not(ion-title, ion-button){
+  color:black;
 }
 
-.btn-admin{
-  display: flex;
-  align-items: center;
-  display: relative;
-  padding-top: 2%;
+*:not(footer, .text-welcum, .logo-prod, .list){
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif black;
+   padding: 2%;
+}
+
+h1,p{
+   padding: 0%;
+   margin: 0%;
+}
+
+img{
+   max-width: 100%;
+   max-height: 100%;
+   padding: 0%;
+   margin: 0%;
+}
+
+.list{
+   list-style: none;
+   margin: 2%;
+   
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+   border: solid black;
+}
+
+.list ion-button{
+   display: flex;
+   align-items: center;
+}
+
+.list h3, h4, p{
+   margin: 0;
+   padding: 0;
+}
+
+.text{
+   color: black;
 }
 
 .text-welcum{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  text-align: justify;
-  justify-content: center;
-  color:black;
-  background-color: darkgray;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+   align-items: center;
+   align-content: center;
+   text-align: justify;
+   justify-content: center;
+   color:black;
+   background-color: lightgreen;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.logo{
+   width: 70%;
+   display: flex;
+   margin: auto;
+   align-items: center;
+   align-content: center;
+   text-align: justify;
+   justify-content: center;
+   top: 5%;
+   padding-top: 5%;
 }
+
+.logo-ss{
+   display: flex;
+   margin: auto;
+   align-items: center;
+   align-content: center;
+   text-align: justify;
+   justify-content: center;
+   padding-top: 5%;
+   size: 20px;
+ }
+
+
+.categ{
+   border: 1px solid black;
+   color: white;
+   padding: 10px 24px;
+   cursor: pointer;
+   float:none;
+}
+
+.categ::after{
+   content: "";
+   clear: both;
+   display: table;
+}
+
+.logo-prod{
+   width: 100%;
+   height: 10rem;
+   display: flex;
+   margin: auto;
+   align-items: center;
+   align-content: center;
+   text-align: justify;
+   justify-content: center;
+   top: 5%;
+   padding-top: 5%;
+   border: solid black;
+   background-color: whitesmoke;
+}
+
+.btn-menu{
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   float: none;
+   border-radius: 25%;
+}
+
+.btn-exit{
+   height: 11%;
+   width: 23%;
+   display: flex;
+   justify-content: space-between;
+   float: left;
+   border-radius: 25%;
+   color: black;
+}
+
+.btn-lista{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-radius: 25%;
+}
+
+.btn-carro{
+   height: 11%;
+   max-width: 23%;
+   display: flex;
+   justify-content: space-between;
+   float:right;
+   border-radius: 25%;
+   color: black;
+}
+
+
+.stock-menu{
+   border: solid black;
+   display: grid;
+   gap: 50px 100px;
+   padding: 5%;
+   border-radius: 0.5%;
+   background-color: #f33a2de8;
+}
+
+.footer{
+   position: relative;
+   width: 100%;
+   text-align: center;
+   background-color: black;
+}
+ 

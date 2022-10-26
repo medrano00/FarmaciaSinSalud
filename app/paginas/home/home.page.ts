@@ -12,6 +12,8 @@ export class HomePage {
   btnClicked(){
     alert('Felicidades Clickeaste el boton con exito');
   }
+
+  //animaciones
   constructor(private alertController:AlertController,private animationCtrl: AnimationController) {
     this.bbb();
    }
@@ -24,10 +26,10 @@ export class HomePage {
  aaa(){
    const animation = createAnimation()
    .addElement(document.querySelector('#titulo'))
-   .duration(3000)
+   .duration(9000)
    .iterations(Infinity)
-   .fromTo('transform', 'translateX(-150px)', 'translateX(250px)')
-   .fromTo('opacity', '1', '0,2');
+   .fromTo('transform', 'translateX(-250px)', 'translateX(250px)')
+   .fromTo('opacity', '5', '0,1');
    animation.play();
  }
 
@@ -36,10 +38,10 @@ export class HomePage {
  bbb(){
    const squareA = createAnimation()
    .addElement(document.querySelector('#card'))
-   .duration(5000)
+   .duration(10000)
    .keyframes([
      { offset: 0, transform: 'scale(1))', opacity: '0.5' },
-     { offset: 0.5, transform: 'scale(0.8)', opacity: '1' },
+     { offset: 0.5, transform: 'scale(0.9)', opacity: '1' },
      { offset: 1, transform: 'scale(1)', opacity: '0.5' }
    ]);
 

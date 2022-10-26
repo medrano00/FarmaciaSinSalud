@@ -1,10 +1,50 @@
-*:not(footer, .text-welcum, .logo-prod){
+
+* :not(ion-title, ion-button){
+   color:black;
+}
+
+*:not(footer, .text-welcum, .logo-prod, .list){
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif black;
     padding: 2%;
-    margin: 5%;
+}
+
+h1,p{
+    padding: 0%;
+    margin: 0%;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.list{
+    list-style: none;
+    margin: 2%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    border: solid black;
+}
+
+.list ion-button{
+    display: flex;
+    align-items: center;
+}
+
+.list h3, h4, p{
+    margin: 0;
+    padding: 0;
 }
 
 .text{
-    color:black;
+    color: black;
 }
 
 .text-welcum{
@@ -14,7 +54,7 @@
     text-align: justify;
     justify-content: center;
     color:black;
-    background-color: darkgray;
+    background-color: skyblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -28,21 +68,17 @@
     justify-content: center;
     top: 5%;
     padding-top: 5%;
-    border: solid black;
-    background-color: whitesmoke;
 }
 
 .logo-ss{
-    width: 90%;
     display: flex;
     margin: auto;
     align-items: center;
     align-content: center;
     text-align: justify;
     justify-content: center;
-    top: 5%;
     padding-top: 5%;
-    border: solid black;
+    size: 20px;
   }
 
 
@@ -76,7 +112,9 @@
 }
 
 .btn-menu{
+    max-width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     float: none;
     border-radius: 25%;
@@ -115,10 +153,8 @@
 
 .footer{
     position: relative;
-    top: 15%;
     width: 100%;
     text-align: center;
-    height: 20%;
     background-color: black;
 }
   
